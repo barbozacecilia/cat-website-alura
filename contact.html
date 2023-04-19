@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Contacto</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="box-header">
+                <h1><img src="images/logo.png" class="logo" alt="logo de la pagina"> </h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Productos</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            </header>
+
+        <main>
+            <form action="">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" class="input-form" required placeholder="Su primer nombre">
+
+                <label for="lastname">Apellido</label>
+                <input type="text" id="lastname" class="input-form" required placeholder="Su apellido/s">
+
+                <label for="email">Correo electronico</label>
+                <input type="email" id="email" class="input-form" required placeholder="email@dominio.com">
+
+                <label for="phone">Telefono</label>
+                <input type="tel" id="phone" class="input-form" required placeholder="(xxxx) xxxx xxx">
+
+                <label for="message">Mensaje</label>
+                <textarea class="input-form" name="message" id="message" placeholder="Escribe tu mensaje aqui" cols="70" rows="10"></textarea>
+
+                <fieldset>
+                    <legend>como desea ser contactado?</legend>
+                    <label for="radio-email"><input type="radio" value="email" id="radio-email" name="contact">
+                        Email</label>
+                    
+                    <label for="radio-phone"><input type="radio" value="phone" id="radio-phone" name="contact">Telefono</label>
+                    
+                    <label for="radio-whatsapp"><input type="radio" value="whatsapp" checked id="radio-whatsapp" name="contact">Whatsapp</label>
+                    
+                </fieldset>
+
+                <fieldset>
+                        <legend>El horario que desea ser atentido es:</legend>
+                    <select>
+                        <option>Primer turno</option>
+                        <option>Segundo turno</option>
+                        <option>Tercer turno</option>
+                    </select>
+                </fieldset>
+                
+                
+                <label for=""><input class="checkbox" checked type="checkbox">quiere recibir novedades de la pag?</label>
+                <input type="submit" class="bottom-form" value="enviar formulario">
+            </form>
+
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Turno</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Primer turno</td>
+                        <td>8 a 10</td>
+                    </tr>
+                    <tr>
+                        <td>Segundo turno</td>
+                        <td>12 a 14</td>
+                    </tr>
+                    <tr>
+                        <td>Tercer turno</td>
+                        <td>16 a 18</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </main>
+        <footer>
+            <img class="footerImg" src="images/cat-footer.jpg" alt="logo del footer">
+            <p class="copyrigth">&copy Copyright Meme company 2023</p>
+        </footer>
+    </body>
+</html>
