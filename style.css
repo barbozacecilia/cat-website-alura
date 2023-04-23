@@ -141,8 +141,9 @@ form label, form legend{
 }
 
 table{
-    margin: 40 px, 40px;
-
+    margin: 40 px;
+     width: 35%;
+     margin-top: 35px;
 }
 
 thead {
@@ -257,19 +258,53 @@ td, th {
 }
 
     @media screen and (max-width:480px){
-
+    /*home*/
     h1{
         text-align: center;
     }
     nav {
         position: static;
     }
-    .list-of-reasons {
-        width: 100%;
-        margin: 50px;
+    .box-header nav ul{
+        padding: 1.5em;
     }
 
-    .box-header, .boxes-main, .section-one, .map-container, .video, .section-of-reasons{
+    .list-of-reasons, .items, .reasons , .box-header, .boxes-main, .section-one, .map-container, .video, .section-of-reasons{
         width: auto;
-    }    
+    }
+    .reasons {
+        margin: 10px;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+    .section-of-reasons, .map-container,  .section-one  {
+        padding-inline: 1.5em;
+    }
+
+    /*Products*/
+    .boxes-main li{
+        display: inline-block;
+        width: auto;
+        margin: 20px;
+    }
+
+    .boxes-main h2{
+        margin-bottom: 0.2em;
+    }
+    
+    /*Contact*/
+    .form-container{
+        width: 100%;
+    }
+
+    .bottom-form {
+        width: 15em;
+        margin-bottom: 1.5em;
+    }
+
+    .boxes-main table {
+        width: 100%;
+    }
+
+
 }
